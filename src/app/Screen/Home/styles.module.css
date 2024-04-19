@@ -8,6 +8,15 @@
   font-family: __Inter_aaf875, __Inter_Fallback_aaf875;
   font-style: oblique;
 }
+.tick {
+  position: absolute;
+  top: 5px;
+  left: -3px;
+  width: 20px;
+  height: 20px;
+  background-color: #3300ff; /* Màu xanh */
+  border-radius: 50%;
+}
 .spin__container {
   padding: 0;
   height: -moz-fit-content;

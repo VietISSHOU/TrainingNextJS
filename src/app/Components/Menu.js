@@ -2,6 +2,9 @@
 import React, { useState } from "react";
 import styles from "./Menu.module.css";
 
+import "@/app/i18n/i18n";
+import { useTranslation } from "react-i18next";
+
 const MenuItem = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -12,6 +15,8 @@ const MenuItem = () => {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+
+  const { t } = useTranslation();
 
   return (
     <>
@@ -34,17 +39,17 @@ const MenuItem = () => {
             <h2 style={{ marginRight: "1000px" }}>Menu</h2>
           </div>
           <div className={styles.menu}>
-            <a href="/">Home</a>
-            <a href="/about">About Us</a>
-            <a href="/services">Search</a>
-            <a href="/services">Pricing</a>
-            <a href="/contact">Contact</a>
-            <a href="/contact">Find an Expert</a>
-            <a href="/contact">Terms of use</a>
-            <a href="/contact">User Manual</a>
+            <a href="/">{t("Home")}</a>
+            <a href="/about">{t("About Us")}</a>
+            <a href="/services">{t("Search")}</a>
+            <a href="/services">{t("Pricing")}</a>
+            <a href="/contact">{t("Contact")}</a>
+            <a href="/contact">{t("Find an Expert")}</a>
+            <a href="/contact">{t("Terms of use")}</a>
+            <a href="/contact">{t("User Manual")}</a>
             <hr />
-            <a href="/contact">Account Register</a>
-            <a href="/contact">Login</a>
+            <a href="/contact">{t("Account Register")}</a>
+            <a href="/contact">{t("Login")}</a>
           </div>
         </div>
       )}

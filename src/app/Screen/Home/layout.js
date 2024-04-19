@@ -48,7 +48,6 @@ export default function HomePageLayout({ children }) {
                   <a href="/">
                     <button>
                       Account Register
-                      {/* {t('Account Resister')} */}
                       <br /> <span>(FREE)</span>
                     </button>
                   </a>
