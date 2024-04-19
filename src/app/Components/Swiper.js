@@ -6,12 +6,17 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "./styles.module.css";
 
+import "@/app/i18n/i18n";
+import { useTranslation } from "react-i18next";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 export default () => {
+  const { t } = useTranslation();
+
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -33,7 +38,7 @@ export default () => {
             </div>
             <div className={styles.content_expert_eye}>
               <div className={styles.content_expert_show}>
-                <button>View profile</button>
+                <button>{t("View profile")}</button>
               </div>
             </div>
           </div>
@@ -52,7 +57,7 @@ export default () => {
             </div>
             <div className={styles.content_expert_eye}>
               <div className={styles.content_expert_show}>
-                <button>View profile</button>
+                <button>{t("View profile")}</button>
               </div>
             </div>
           </div>
@@ -71,7 +76,7 @@ export default () => {
             </div>
             <div className={styles.content_expert_eye}>
               <div className={styles.content_expert_show}>
-                <button>View profile</button>
+                <button>{t("View profile")}</button>
               </div>
             </div>
           </div>
@@ -90,7 +95,7 @@ export default () => {
             </div>
             <div className={styles.content_expert_eye}>
               <div className={styles.content_expert_show}>
-                <button>View profile</button>
+                <button>{t("View profile")}</button>
               </div>
             </div>
           </div>
@@ -109,7 +114,7 @@ export default () => {
             </div>
             <div className={styles.content_expert_eye}>
               <div className={styles.content_expert_show}>
-                <button>View profile</button>
+                <button>{t("View profile")}</button>
               </div>
             </div>
           </div>

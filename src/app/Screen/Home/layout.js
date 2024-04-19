@@ -3,6 +3,7 @@ import Slider from "../../Components/Swiper";
 import SlidePartner from "@/app/Components/SlidePartner";
 import MenuItem from "@/app/Components/Menu";
 import Partners from "@/app/Components/partners";
+import Translation from "@/app/Components/Translation";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { AirplaneOutlined } from '@ant-design/icons';
 
@@ -29,27 +30,7 @@ export default function HomePageLayout({ children }) {
             <div className={styles.translate_container}>
               <div className={styles.translate_left}></div>
               <div className={styles.translate_right}>
-                <div className={styles.flag_country}>
-                  <img
-                    src="https://www.vjp-connect.com/_next/image?url=%2Fimages%2Flogo2.png&w=64&q=75"
-                    width={50}
-                    height={50}
-                  />
-                </div>
-                <div className={styles.flag_country}>
-                  <img
-                    src="https://www.vjp-connect.com/_next/image?url=%2Fimages%2Flogo4.png&w=64&q=75"
-                    width={50}
-                    height={50}
-                  />
-                </div>
-                <div className={styles.flag_country}>
-                  <img
-                    src="https://www.vjp-connect.com/_next/image?url=%2Fimages%2Flogo3.png&w=64&q=75"
-                    width={50}
-                    height={50}
-                  />
-                </div>
+                <Translation />
               </div>
             </div>
             <div className={styles.Navbar_navbar__container}>
@@ -67,6 +48,7 @@ export default function HomePageLayout({ children }) {
                   <a href="/">
                     <button>
                       Account Register
+                      {/* {t('Account Resister')} */}
                       <br /> <span>(FREE)</span>
                     </button>
                   </a>
@@ -537,9 +519,7 @@ export default function HomePageLayout({ children }) {
                           rel="noreferrer"
                           href="https://www.facebook.com/vietjapanpartner"
                         >
-                          <img
-                            src="https://i0.wp.com/ladolcevitasarasota.com/wp-content/uploads/2023/03/facebook-logo-icon-facebook-icon-png-images-icons-and-png-backgrounds-1.png?fit=1000%2C1000&ssl=1"
-                          />
+                          <img src="https://i0.wp.com/ladolcevitasarasota.com/wp-content/uploads/2023/03/facebook-logo-icon-facebook-icon-png-images-icons-and-png-backgrounds-1.png?fit=1000%2C1000&ssl=1" />
                         </a>
                       </li>
                       <li>
@@ -548,9 +528,7 @@ export default function HomePageLayout({ children }) {
                           rel="noreferrer"
                           href="https://www.google.com/maps/place/VIET+JAPAN+PARTNER+CO.,+LTD/@10.8550548,106.629378,15z/data=!4m6!3m5!1s0x3175293582e05b3f:0xf36e2a20d6e9aa63!8m2!3d10.8550548!4d106.629378!16s%2Fg%2F11ryskv9d4?entry=ttu"
                         >
-                          <img
-                            src="https://icon-library.com/images/icon-google-plus/icon-google-plus-9.jpg"
-                          />
+                          <img src="https://icon-library.com/images/icon-google-plus/icon-google-plus-9.jpg" />
                         </a>
                       </li>
                     </ul>
