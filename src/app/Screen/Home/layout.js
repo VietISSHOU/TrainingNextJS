@@ -13,18 +13,12 @@ export const metadata = {
   description: "Training NextJs",
   openGraph: {
     images: [
-      {
-        url: "https://www.vjp-connect.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogobanner.dcf00dbd.png&w=200&q=75",
-        width: 200,
-        height: 200, // Điều chỉnh kích thước theo yêu cầu của bạn
-        alt: "Alt_text_for_image", // Thêm văn bản mô tả hình ảnh
-      },
+      "https://vjpconnect.s3.ap-southeast-1.amazonaws.com/newlogo.png",
     ],
     title: "Home",
     description: "Training NextJs",
   },
 };
-
 
 const images = [
   { src: "https://www.vjp-connect.com/images/logo-company-1.png" },
