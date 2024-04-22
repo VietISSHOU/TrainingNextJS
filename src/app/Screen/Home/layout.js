@@ -13,7 +13,7 @@ export const metadata = {
   description: "Training NextJs",
   openGraph: {
     images: [
-      "https://vj-partner.com/uploads/img/general/1638331162-logo-VJP128x128.png",
+      "https://www.vjp-connect.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogobanner.dcf00dbd.png&w=3840&q=75",
     ],
     title: "Home",
     description: "Training NextJs",
