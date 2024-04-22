@@ -11,7 +11,7 @@ import Head from "next/head";
 export const metadata = {
   title: "Home Page VJC",
   description: "Training NextJs",
-  url: "https://training-next-js-gamma.vercel.app/Screen/Home", 
+  url: "https://training-next-js-gamma.vercel.app/Screen/Home",
   openGraph: {
     images: [
       {
@@ -38,6 +38,12 @@ const images = [
 export default function HomePageLayout({ children }) {
   return (
     <>
+      <Head>
+        <title>{metadata.title}</title>
+        <meta property="og:title" content={metadata.title} />
+        <meta property="og:image" content={metadata.images} />
+        <meta property="og:description" content={metadata.description} />
+      </Head>
       <div className={styles.body}>
         <nav>
           <div className={styles.spin__container}>
