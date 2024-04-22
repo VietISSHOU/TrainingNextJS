@@ -392,7 +392,7 @@
   transition: all 0.3s ease-out 0s;
 }
 .service__box span {
-  font-size: 50px;
+  /* font-size: 50px; */
   color: #b22525;
   transition: color 0.3s ease-out 0s;
   font-style: normal;

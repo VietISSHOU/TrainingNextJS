@@ -18,7 +18,8 @@ const resources = {
             EXPERTS: {
                 'Business & IT consultant': 'Business & IT consultant',
                 '(Vo Duc Thang)': '(Vo Duc Thang)',
-            }
+            },
+            '(FREE)': '(FREE)'
         }
     },
     vi: {
@@ -35,7 +36,8 @@ const resources = {
             'Account Register': 'Đăng ký tài khoản',
             'Login': 'Đăng nhập',
             'Business & IT consultant': 'Tư vấn kinh doanh và CNTT',
-            '(Vo Duc Thang)': '(Võ Đức Thắng)'
+            '(Vo Duc Thang)': '(Võ Đức Thắng)',
+            '(FREE)': '(MIỄN PHÍ)'
         }
     },
     ja: {
@@ -52,7 +54,8 @@ const resources = {
             'Account Register': 'アカウント登録',
             'Login': 'ログイン',
             'Business & IT consultant': 'ビジネス＆ITコンサルタント',
-            '(Vo Duc Thang)': '(ヴォー・ドュック・タン)'
+            '(Vo Duc Thang)': '(ヴォー・ドュック・タン)',
+            '(FREE)': '(無料)'
         }
     }
 }

@@ -5,6 +5,8 @@ import MenuItem from "@/app/Components/Menu";
 import Partners from "@/app/Components/partners";
 import Translation from "@/app/Components/Translation";
 import DemoLB from "@/app/Components/LightBox";
+import Header from "@/app/Components/Header";
+import Industry from "@/app/Components/Industry";
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { AirplaneOutlined } from '@ant-design/icons';
@@ -35,36 +37,7 @@ export default function HomePageLayout({ children }) {
     <>
       <div className={styles.body}>
         <nav>
-          <div className={styles.spin__container}>
-            <div className={styles.translate_container}>
-              <div className={styles.translate_left}></div>
-              <div className={styles.translate_right}>
-                <Translation />
-              </div>
-            </div>
-            <div className={styles.Navbar_navbar__container}>
-              <div className={styles.Navbar_logo}>
-                <a href="/Screen/Home">
-                  <img
-                    src="https://www.vjp-connect.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogovjpc.8300dbca.png&w=384&q=75"
-                    width={"50%"}
-                    height={"100%"}
-                  />
-                </a>
-              </div>
-              <div className={styles.Navbar_navbar__menu}>
-                <div className={styles.Navbar_navbar__left_menu}>
-                  <a href="/">
-                    <button>
-                      Account Register
-                      <br /> <span>(FREE)</span>
-                    </button>
-                  </a>
-                  <MenuItem />
-                </div>
-              </div>
-            </div>
-          </div>
+          <Header />
           <div>
             <DemoLB />
             <form data-gtm-form-interact-id="0">
@@ -188,97 +161,7 @@ export default function HomePageLayout({ children }) {
             </div>
 
             <h3 className={styles.matching_title}>INDUSTRY</h3>
-            <div className={styles.Container_container}>
-              <div className={styles.service__wrapper}>
-                <div className={styles.service__element}>
-                  <a href="/">
-                    <div className={styles.service__box}>
-                      <span>&#x2708;</span>
-                      {/* <span>
-                        <img
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwMeY8ypsiWfjaV28oijXoeSK0Jg7KXcrWuEkJAEe7eg&s"
-                          width={64}
-                          height={64}
-                        />
-                      </span> */}
-                      <div className={styles.service__content}>
-                        <h3>Travel, Entertainment, and Design</h3>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div className={styles.service__element}>
-                  <a href="/">
-                    <div className={styles.service__box}>
-                      <span>&#x2708;</span>
-                      <div className={styles.service__content}>
-                        <h3>Travel, Entertainment, and Design</h3>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div className={styles.service__element}>
-                  <a href="/">
-                    <div className={styles.service__box}>
-                      <span>&#x2708;</span>
-                      <div className={styles.service__content}>
-                        <h3>Travel, Entertainment, and Design</h3>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div className={styles.service__element}>
-                  <a href="/">
-                    <div className={styles.service__box}>
-                      <span>&#x2708;</span>
-                      <div className={styles.service__content}>
-                        <h3>Travel, Entertainment, and Design</h3>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div className={styles.service__element}>
-                  <a href="/">
-                    <div className={styles.service__box}>
-                      <span>&#x2708;</span>
-                      <div className={styles.service__content}>
-                        <h3>Travel, Entertainment, and Design</h3>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div className={styles.service__element}>
-                  <a href="/">
-                    <div className={styles.service__box}>
-                      <span>&#x2708;</span>
-                      <div className={styles.service__content}>
-                        <h3>Travel, Entertainment, and Design</h3>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div className={styles.service__element}>
-                  <a href="/">
-                    <div className={styles.service__box}>
-                      <span>&#x2708;</span>
-                      <div className={styles.service__content}>
-                        <h3>Travel, Entertainment, and Design</h3>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div className={styles.service__element}>
-                  <a href="/">
-                    <div className={styles.service__box}>
-                      <span>&#x2708;</span>
-                      <div className={styles.service__content}>
-                        <h3>Travel, Entertainment, and Design</h3>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
+            <Industry />
 
             <h3 className={styles.matching_title}>PARTNERS AND CUSTOMERS</h3>
             <SlidePartner images={images} />
