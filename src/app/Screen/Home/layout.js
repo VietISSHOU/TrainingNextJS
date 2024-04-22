@@ -35,7 +35,7 @@ export default function HomePageLayout({ children }) {
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        <meta property="og:image" content={metadata.image} />
+        <meta property="og:image" content={metadata.images} />
       </Head>
       <div className={styles.body}>
         <nav>
