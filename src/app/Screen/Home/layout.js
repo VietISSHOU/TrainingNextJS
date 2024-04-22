@@ -4,18 +4,20 @@ import SlidePartner from "@/app/Components/SlidePartner";
 import MenuItem from "@/app/Components/Menu";
 import Partners from "@/app/Components/partners";
 import Translation from "@/app/Components/Translation";
-
-// import 'lightbox.js-react/dist/index.css'
-// import {SlideshowLightbox, initLightboxJS} from 'lightbox.js-react'
-
+import Head from "next/head";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { AirplaneOutlined } from '@ant-design/icons';
-
 
 export const metadata = {
   title: "Home Page VJC",
   description: "Training NextJs",
-  images: "https://vjpconnect.s3.ap-southeast-1.amazonaws.com/newlogo.png",
+  openGraph: {
+    images: [
+      "https://www.vjp-connect.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogobanner.dcf00dbd.png&w=3840&q=75",
+    ],
+    title: "Home",
+    description: "Training NextJs",
+  },
 };
 
 const images = [
@@ -30,6 +32,11 @@ const images = [
 export default function HomePageLayout({ children }) {
   return (
     <>
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta property="og:image" content={metadata.image} />
+      </Head>
       <div className={styles.body}>
         <nav>
           <div className={styles.spin__container}>
