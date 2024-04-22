@@ -13,12 +13,18 @@ export const metadata = {
   description: "Training NextJs",
   openGraph: {
     images: [
-      "https://www.vjp-connect.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogobanner.dcf00dbd.png&w=3840&q=75",
+      {
+        url: "https://www.vjp-connect.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogobanner.dcf00dbd.png&w=200&q=75",
+        width: 200,
+        height: 200, // Điều chỉnh kích thước theo yêu cầu của bạn
+        alt: "Alt_text_for_image", // Thêm văn bản mô tả hình ảnh
+      },
     ],
     title: "Home",
     description: "Training NextJs",
   },
 };
+
 
 const images = [
   { src: "https://www.vjp-connect.com/images/logo-company-1.png" },
@@ -32,11 +38,6 @@ const images = [
 export default function HomePageLayout({ children }) {
   return (
     <>
-      {/* <Head>
-        <title>{metadata.title}</title>
-        <meta property="og:image" content={metadata.images} />
-        <meta property="og:description" content={metadata.description} />
-      </Head> */}
       <div className={styles.body}>
         <nav>
           <div className={styles.spin__container}>
