@@ -18,6 +18,10 @@ export default function DemoLB() {
       src: "https://source.unsplash.com/Z6SXt1v5tP8/768x512",
       alt: "Mechanical keyboard with white, pastel pink, yellow and red keycaps.",
     },
+    {
+      src: "https://images.pexels.com/photos/1933239/pexels-photo-1933239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      alt: "Night.",
+    },
   ];
 
   let [isOpen, setIsOpen] = useState(false);

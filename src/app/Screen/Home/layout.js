@@ -66,12 +66,6 @@ export default function HomePageLayout({ children }) {
             </div>
           </div>
           <div>
-            {/* <img
-              src="https://www.vjp-connect.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogobanner.dcf00dbd.png&w=3840&q=75"
-              width={"100%"}
-              height={"100%"}
-              style={{ marginTop: "165px" }}
-            /> */}
             <DemoLB />
             <form data-gtm-form-interact-id="0">
               <div className={styles.container_content_search}>
