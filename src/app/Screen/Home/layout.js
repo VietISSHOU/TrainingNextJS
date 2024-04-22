@@ -32,12 +32,11 @@ const images = [
 export default function HomePageLayout({ children }) {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>{metadata.title}</title>
-        <meta property="og:title" content={metadata.title} />
         <meta property="og:image" content={metadata.images} />
         <meta property="og:description" content={metadata.description} />
-      </Head>
+      </Head> */}
       <div className={styles.body}>
         <nav>
           <div className={styles.spin__container}>
