@@ -4,7 +4,7 @@ import SlidePartner from "@/app/Components/SlidePartner";
 import MenuItem from "@/app/Components/Menu";
 import Partners from "@/app/Components/partners";
 import Translation from "@/app/Components/Translation";
-import Head from "next/head";
+
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { AirplaneOutlined } from '@ant-design/icons';
 
@@ -13,7 +13,7 @@ export const metadata = {
   description: "Training NextJs",
   openGraph: {
     images: [
-      "https://vjpconnect.s3.ap-southeast-1.amazonaws.com/newlogo.png",
+      "https://vj-partner.com/uploads/img/general/1638331162-logo-VJP128x128.png",
     ],
     title: "Home",
     description: "Training NextJs",
