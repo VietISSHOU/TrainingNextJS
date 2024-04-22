@@ -11,15 +11,9 @@ import Head from "next/head";
 export const metadata = {
   title: "Home Page VJC",
   description: "Training NextJs",
-  url: "https://training-next-js-gamma.vercel.app/Screen/Home",
   openGraph: {
     images: [
-      {
-        url: "https://www.vjp-connect.com/_next/image?url=%2F__next%2Fstatic%2Fmedia%2Flogobanner.dcf00dbd.png&w=3840&q=75",
-        width: 1200,
-        height: 630,
-        alt: "VJC Home Page Banner",
-      },
+      "https://www.vjp-connect.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogobanner.dcf00dbd.png&w=3840&q=75",
     ],
     title: "Home",
     description: "Training NextJs",
