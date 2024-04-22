@@ -1,23 +1,47 @@
 "use client";
 import React from "react";
 import { SlideshowLightbox } from "lightbox.js-react";
+import { useState } from "react";
 import "lightbox.js-react/dist/index.css";
 
 export default function DemoLB() {
+  const images = [
+    {
+      src: "https://www.vjp-connect.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogobanner.dcf00dbd.png&w=3840&q=75",
+      alt: "VJC.",
+    },
+    {
+      src: "https://source.unsplash.com/rsAeSMzOX9Y/768x512",
+      alt: "Mechanical keyboard with white, pastel green and red keycaps.",
+    },
+    {
+      src: "https://source.unsplash.com/Z6SXt1v5tP8/768x512",
+      alt: "Mechanical keyboard with white, pastel pink, yellow and red keycaps.",
+    },
+  ];
+
+  let [isOpen, setIsOpen] = useState(false);
+
   return (
-    <SlideshowLightbox className="container grid grid-cols-3 gap-2 mx-auto">
+    <div>
       <img
-        className="w-full rounded"
-        src="https://images.pexels.com/photos/580151/pexels-photo-580151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        src="https://www.vjp-connect.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogobanner.dcf00dbd.png&w=3840&q=75"
+        width={"100%"}
+        height={"100%"}
+        style={{ marginTop: "165px" }}
+        onClick={() => {
+          setIsOpen(true);
+        }}
       />
-      <img
-        className="w-full rounded"
-        src="https://images.pexels.com/photos/13996896/pexels-photo-13996896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      <SlideshowLightbox
+        images={images}
+        showThumbnails={true}
+        open={isOpen}
+        lightboxIdentifier="lbox1"
+        onClose={() => {
+          setIsOpen(false);
+        }}
       />
-      <img
-        className="w-full rounded"
-        src="https://images.pexels.com/photos/13208323/pexels-photo-13208323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-      />
-    </SlideshowLightbox>
+    </div>
   );
 }

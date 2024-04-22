@@ -4,6 +4,7 @@ import SlidePartner from "@/app/Components/SlidePartner";
 import MenuItem from "@/app/Components/Menu";
 import Partners from "@/app/Components/partners";
 import Translation from "@/app/Components/Translation";
+import DemoLB from "@/app/Components/LightBox";
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { AirplaneOutlined } from '@ant-design/icons';
@@ -65,12 +66,13 @@ export default function HomePageLayout({ children }) {
             </div>
           </div>
           <div>
-            <img
+            {/* <img
               src="https://www.vjp-connect.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogobanner.dcf00dbd.png&w=3840&q=75"
               width={"100%"}
               height={"100%"}
               style={{ marginTop: "165px" }}
-            />
+            /> */}
+            <DemoLB />
             <form data-gtm-form-interact-id="0">
               <div className={styles.container_content_search}>
                 <input
