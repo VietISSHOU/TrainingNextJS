@@ -14,7 +14,11 @@ const resources = {
             'Terms of use': 'Terms of use',
             'User Manual': 'User Manual',
             'Account Register': 'Account Register',
-            'Login': 'Login'
+            'Login': 'Login',
+            EXPERTS: {
+                'Business & IT consultant': 'Business & IT consultant',
+                '(Vo Duc Thang)': '(Vo Duc Thang)',
+            }
         }
     },
     vi: {
@@ -29,7 +33,9 @@ const resources = {
             'Terms of use': 'Điều khoản sử dụng',
             'User Manual': 'Hướng dẫn sử dụng',
             'Account Register': 'Đăng ký tài khoản',
-            'Login': 'Đăng nhập'
+            'Login': 'Đăng nhập',
+            'Business & IT consultant': 'Tư vấn kinh doanh và CNTT',
+            '(Vo Duc Thang)': '(Võ Đức Thắng)'
         }
     },
     ja: {
@@ -44,7 +50,9 @@ const resources = {
             'Terms of use': '利用規約',
             'User Manual': 'ユーザーマニュアル',
             'Account Register': 'アカウント登録',
-            'Login': 'ログイン'
+            'Login': 'ログイン',
+            'Business & IT consultant': 'ビジネス＆ITコンサルタント',
+            '(Vo Duc Thang)': '(ヴォー・ドュック・タン)'
         }
     }
 }

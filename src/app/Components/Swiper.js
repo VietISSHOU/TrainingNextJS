@@ -33,8 +33,8 @@ export default () => {
               <img src="https://vjp-connect-upload.s3.ap-southeast-1.amazonaws.com/thangvo.png" />
             </div>
             <div className={styles.content_slider_name}>
-              <h3>Business &amp; IT consultant</h3>
-              <span>(Vo Duc Thang)</span>
+              <h3>{t("Business & IT consultant")}</h3>
+              <span>{t("(Vo Duc Thang)")}</span>
             </div>
             <div className={styles.content_expert_eye}>
               <div className={styles.content_expert_show}>
@@ -52,8 +52,8 @@ export default () => {
               <img src="https://vjp-connect-upload.s3.ap-southeast-1.amazonaws.com/expert-team-01.jpg" />
             </div>
             <div className={styles.content_slider_name}>
-              <h3>Business &amp; IT consultant</h3>
-              <span>(Vo Duc Thang)</span>
+              <h3>{t("Business & IT consultant")}</h3>
+              <span>{t("(Vo Duc Thang)")}</span>
             </div>
             <div className={styles.content_expert_eye}>
               <div className={styles.content_expert_show}>
@@ -71,8 +71,8 @@ export default () => {
               <img src="https://vjp-connect-upload.s3.ap-southeast-1.amazonaws.com/expert-team-02.jpg" />
             </div>
             <div className={styles.content_slider_name}>
-              <h3>Business &amp; IT consultant</h3>
-              <span>(Vo Duc Thang)</span>
+              <h3>{t("Business & IT consultant")}</h3>
+              <span>{t("(Vo Duc Thang)")}</span>
             </div>
             <div className={styles.content_expert_eye}>
               <div className={styles.content_expert_show}>
@@ -90,8 +90,8 @@ export default () => {
               <img src="https://vjp-connect-upload.s3.ap-southeast-1.amazonaws.com/itcomtor.png" />
             </div>
             <div className={styles.content_slider_name}>
-              <h3>Business &amp; IT consultant</h3>
-              <span>(Vo Duc Thang)</span>
+              <h3>{t("Business & IT consultant")}</h3>
+              <span>{t("(Vo Duc Thang)")}</span>
             </div>
             <div className={styles.content_expert_eye}>
               <div className={styles.content_expert_show}>
@@ -109,8 +109,8 @@ export default () => {
               <img src="https://vjp-connect-upload.s3.ap-southeast-1.amazonaws.com/thangvo.png" />
             </div>
             <div className={styles.content_slider_name}>
-              <h3>Business &amp; IT consultant</h3>
-              <span>(Vo Duc Thang)</span>
+              <h3>{t("Business & IT consultant")}</h3>
+              <span>{t("(Vo Duc Thang)")}</span>
             </div>
             <div className={styles.content_expert_eye}>
               <div className={styles.content_expert_show}>
