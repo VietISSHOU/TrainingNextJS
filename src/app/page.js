@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Link href="http://localhost:3000/Screen/Home" style={{color: "red"}}>Link to VJC - Local</Link>
-      <Link href="https://training-next-js-gamma.vercel.app/" style={{color: "blue"}}>Link to VJC - Vercel</Link>
+      <Link href="https://training-next-js-gamma.vercel.app/Screen/Home" style={{color: "blue"}}>Link to VJC - Vercel</Link>
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
