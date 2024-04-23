@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
           style={{ position: "absolute", marginLeft: "100px", color: "green" }}
         >
           <p>Welcome to Viet's training nextjs lession</p>
-          <Link href="/Screen/Home" style={{color: "blue"}}>Back to VJC</Link>
+          <Link href="/Screen/Home" style={{color: "blue"}}>Back</Link>          
         </nav>
         {children}
       </body>
